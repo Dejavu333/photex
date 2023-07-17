@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:PHOTEX;assembly=TabbedPage"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="PHOTEX.AppTabbedPage">
+
+    <NavigationPage Title="Shoot" IconImageSource="{StaticResource TabOne}">
+        <x:Arguments>
+            <local:MainPage Title="Shoot" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Choose" IconImageSource="{StaticResource TabTwo}">
+        <x:Arguments>
+            <local:ChoosePage Title="Choose" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Saved" IconImageSource="{StaticResource TabThree}">
+        <x:Arguments>
+            <local:SavedPage Title="Saved" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Settings" IconImageSource="{StaticResource TabFour}">
+        <x:Arguments>
+            <local:SettingsPage Title="Settings" />
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>

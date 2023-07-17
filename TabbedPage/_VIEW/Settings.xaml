@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PHOTEX.SettingsPage">
+
+
+    <VerticalStackLayout 
+            Spacing="25" 
+            Padding="30,0" 
+            VerticalOptions="Center">
+
+        <Switch x:Name="Switch1" 
+              IsToggled="True" 
+              Toggled="Switch_Toggled1" 
+              HorizontalOptions="Center" 
+              VerticalOptions="Center" />
+        <Switch x:Name="Switch2" 
+              IsToggled="True" 
+              Toggled="Switch_Toggled3" 
+              HorizontalOptions="Center" 
+              VerticalOptions="Center" />
+        <Switch x:Name="Switch3" 
+              IsToggled="True" 
+              Toggled="Switch_Toggled3" 
+              HorizontalOptions="Center" 
+              VerticalOptions="Center" />
+        <CheckBox x:Name="CheckBox" 
+              IsChecked="True" 
+              CheckedChanged="CheckBox_CheckedChanged"
+              HorizontalOptions="Center" 
+              VerticalOptions="Center" />
+        
+        
+
+        <Label Text="Switch is on" 
+               x:Name="x" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center" />
+        
+        
+
+    </VerticalStackLayout>
+</ContentPage>
